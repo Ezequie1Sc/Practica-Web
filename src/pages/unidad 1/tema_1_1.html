@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 1.1: Visión General del Proceso | Células Plenum</title>
+    <meta name="description" content="Tema 1.1 del Módulo 1: Visión general del proceso de ingeniería de software - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado UNIFICADO -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+    
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 1: Fundamentos de Ingeniería de Software</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 1/index_moduloUno.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 1/tema_1_2.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Desarrollo de Software" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_1.html" class="topic-name">1.1 Visión General de Ingeniería de Software</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_2.html" class="topic-name">1.2 Requerimientos</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_3.html" class="topic-name">1.3 Arquitectura</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_4.html" class="topic-name">1.4 Patrones de Diseño</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 1.1: Visión General del Proceso de Ingeniería de Software</h1>
+            <div class="intro-text">
+                <p>
+                    En este tema se presenta una <strong>visión integral del proceso de ingeniería de software</strong>, 
+                    abarcando sus etapas fundamentales: <strong>análisis de requerimientos</strong>, <strong>diseño de arquitectura</strong>, 
+                    <strong>implementación</strong>, <strong>pruebas</strong> y <strong>mantenimiento</strong>. 
+                </p>
+                <p>
+                    Se exploran los principios clave que garantizan la calidad, escalabilidad y mantenibilidad de los sistemas, 
+                    así como las metodologías ágiles y tradicionales que guían el desarrollo moderno de software.
+                </p>
+            </div>
+        </section>
+
+        <!-- Video principal -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Video Principal</h2>
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/unupVqLwayA" 
+                    title="Introducción a la Ingeniería de Software"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Introducción a la Ingeniería de Software</h3>
+                <p class="video-desc">
+                    Este video presenta una visión completa del proceso de ingeniería de software, explorando sus fundamentos, 
+                    etapas clave y la importancia de seguir metodologías estructuradas para el desarrollo de sistemas de calidad.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Fundamentos Históricos</h3>
+                    <p>La ingeniería de software surgió como disciplina en la década de 1960 durante la "crisis del software", cuando los proyectos enfrentaban constantes retrasos, sobrecostos y fallos. La conferencia de la OTAN en 1968 marcó oficialmente el nacimiento de esta disciplina.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Ciclo de Vida del Software</h3>
+                    <p>El proceso de desarrollo sigue un ciclo de vida que incluye: recolección de requisitos, análisis, diseño, implementación, pruebas, despliegue y mantenimiento. Cada fase tiene objetivos específicos y entregables claramente definidos.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Metodologías de Desarrollo</h3>
+                    <p>Existen dos enfoques principales: las metodologías tradicionales (Cascada, V-Model) y las ágiles (Scrum, XP, Kanban). Las ágiles priorizan la flexibilidad y entrega incremental, mientras las tradicionales enfatizan la planificación detallada.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Puntos Clave del Proceso</h3>
+                <ul>
+                    <li>La ingeniería de software aplica principios de ingeniería al desarrollo de software</li>
+                    <li>Busca sistemáticamente la calidad, eficiencia y mantenibilidad</li>
+                    <li>Incluye procesos de gestión de proyectos y aseguramiento de calidad</li>
+                    <li>Se adapta continuamente a nuevas tecnologías y metodologías</li>
+                    <li>Considera factores humanos, organizacionales y económicos</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 1.1</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada, diagramas, ejemplos prácticos y referencias bibliográficas.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 1/Tema 1.1 Presentacion .pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 1/Tema 1.1 Presentacion .pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 1/index_moduloUno.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Volver al Módulo 1
+            </a>
+            <a href="/src/pages/unidad 1/tema_1_2.html" class="nav-btn next">
+                Siguiente: 1.2 Requerimientos <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 1.1: Visión General del Proceso</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

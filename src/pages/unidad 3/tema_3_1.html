@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 3.1: Fundamentos de Desarrollo Web | Células Plenum</title>
+    <meta name="description" content="Tema 3.1 del Módulo 3: Fundamentos de Desarrollo Web - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 3: Desarrollo Web y Tecnologías Emergentes</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 3/tema_3_2.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Fundamentos de Desarrollo Web" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_1.html" class="topic-name">3.1 Fundamentos de Desarrollo Web</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_2.html" class="topic-name">3.2 Frontend vs Backend</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_3.html" class="topic-name">3.3 HTML y CSS</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_4.html" class="topic-name">3.4 JavaScript</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_5.html" class="topic-name">3.5 Frameworks de Desarrollo</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_6.html" class="topic-name">3.6 Evaluación Final</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 3.1: Fundamentos de Desarrollo Web</h1>
+            <div class="intro-text">
+                <p>
+                    Los <strong>fundamentos de desarrollo web</strong> constituyen la base esencial para comprender 
+                    cómo funciona internet y cómo se construyen las aplicaciones web modernas. 
+                    Este conocimiento es crucial para cualquier desarrollador que quiera crear 
+                    soluciones efectivas y escalables para la web.
+                </p>
+                <p>
+                    En este tema exploraremos los protocolos de comunicación, la arquitectura 
+                    cliente-servidor, conceptos básicos de redes y los componentes fundamentales 
+                    que hacen posible la experiencia web que conocemos hoy en día.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/DuSURHrZG6I" 
+                    title="Fundamentos Web 1"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.1.1 Fundamentos Web 1</h3>
+                <p class="video-desc">
+                    Introducción completa a los fundamentos del desarrollo web, 
+                    cubriendo conceptos básicos, historia de la web y componentes esenciales 
+                    para entender cómo funciona internet.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/9J1nJOivdyw" 
+                    title="Fundamentos Web 2"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.1.2 Fundamentos Web 2</h3>
+                <p class="video-desc">
+                    Continuación de los fundamentos web, profundizando en protocolos, 
+                    arquitecturas y tecnologías que forman la base del desarrollo web moderno.
+                </p>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/SzSXHv8RKdM" 
+                    title="Fundamentos Web 3"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.1.3 Fundamentos Web 3</h3>
+                <p class="video-desc">
+                    Tercera parte de la serie sobre fundamentos web, enfocándose en 
+                    aplicaciones prácticas y casos de uso reales de los conceptos aprendidos.
+                </p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/K589vqhuMm8" 
+                    title="Protocolo HTTP"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.1.4 Protocolo HTTP</h3>
+                <p class="video-desc">
+                    Explicación detallada del protocolo HTTP, el fundamento de la comunicación web. 
+                    Cubre métodos, códigos de estado, headers y el ciclo de vida de una petición HTTP.
+                </p>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/5rBlxXHOJh4" 
+                    title="Arquitectura Web"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.1.5 Arquitectura Web</h3>
+                <p class="video-desc">
+                    Análisis de la arquitectura de una aplicación web, incluyendo 
+                    componentes frontend, backend, bases de datos y servidores web.
+                </p>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/l6oF_RpBf64" 
+                    title="HTTP y HTML"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.1.6 HTTP y HTML</h3>
+                <p class="video-desc">
+                    Exploración de la relación entre el protocolo HTTP y el lenguaje HTML, 
+                    mostrando cómo trabajan juntos para entregar contenido web a los usuarios.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Protocolo HTTP/HTTPS</h3>
+                    <p>HTTP (Hypertext Transfer Protocol) es el protocolo fundamental de la web. <strong>HTTP</strong> permite transferencia de datos, mientras que <strong>HTTPS</strong> añade cifrado SSL/TLS. Usa métodos como GET, POST, PUT, DELETE y códigos de estado (200 OK, 404 Not Found, 500 Error).</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Sockets</h3>
+                    <p>Un <strong>socket</strong> es un punto final de comunicación bidireccional que permite la comunicación entre procesos, ya sea en la misma máquina o a través de una red. <strong>Es la combinación de una dirección IP y un número de puerto</strong>. Los sockets son fundamentales para la comunicación en red.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Arquitectura Cliente-Servidor</h3>
+                    <p>Modelo donde <strong>clientes</strong> (navegadores) solicitan recursos y <strong>servidores</strong> los proveen. Incluye: servidores web (Apache, Nginx), servidores de aplicaciones (Node.js, Tomcat), y bases de datos. Escalable y separa responsabilidades claramente.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>DNS - Sistema de Nombres de Dominio</h3>
+                    <p>El DNS traduce nombres de dominio legibles (ej: google.com) a <strong>direcciones IP</strong> numéricas. Funciona como la "agenda telefónica" de internet. Incluye registros A, CNAME, MX, y TXT. Esencial para la navegación web.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguridad Web Básica</h3>
+                    <p>Principios fundamentales: <strong>HTTPS</strong> (cifrado), <strong>CORS</strong> (control acceso entre dominios), <strong>CSRF</strong> (protección falsificación solicitudes), y <strong>XSS</strong> (scripting entre sitios). La seguridad comienza con entender estos conceptos básicos.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Lenguajes del Lado del Servidor</h3>
+                    <p>Tecnologías para backend: <strong>PHP</strong>, <strong>Node.js</strong> (JavaScript), <strong>Python</strong> (Django, Flask), <strong>Java</strong> (Spring), <strong>C#</strong> (ASP.NET). Procesan lógica de negocio, acceden a bases de datos y generan contenido dinámico.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Conceptos Fundamentales de Redes</h3>
+                <ul>
+                    <li><strong>IP Address:</strong> Identificador único para dispositivos en una red</li>
+                    <li><strong>Puertos:</strong> Puntos de acceso lógicos (0-65535) para servicios específicos</li>
+                    <li><strong>TCP/IP:</strong> Suite de protocolos que gobierna internet</li>
+                    <li><strong>Protocolo:</strong> Conjunto de reglas para comunicación entre dispositivos</li>
+                    <li><strong>Packet:</strong> Unidad básica de datos transmitidos por la red</li>
+                    <li><strong>Latencia:</strong> Tiempo que toma viajar datos de origen a destino</li>
+                    <li><strong>Ancho de Banda:</strong> Capacidad máxima de transmisión de datos</li>
+                    <li><strong>Protocolo de Aplicación:</strong> Reglas para aplicaciones específicas (HTTP, FTP, SMTP)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 3.1: Fundamentos de Desarrollo Web</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre fundamentos de desarrollo web, 
+                    protocolos de comunicación, arquitectura web, conceptos de redes, 
+                    y explicación completa del concepto de socket con ejemplos prácticos 
+                    y ejercicios de aplicación.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 3/Tema 3.1_Se.pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 3/Tema 3.1_Se.pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Volver al Módulo 3
+            </a>
+            <a href="/src/pages/unidad 3/tema_3_2.html" class="nav-btn next">
+                Siguiente Tema: 3.2 Frontend vs Backend <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 3.1: Fundamentos de Desarrollo Web</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+    </script>
+</body>
+</html>

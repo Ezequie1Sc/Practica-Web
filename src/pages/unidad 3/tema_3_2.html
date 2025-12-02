@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 3.2: HTML - Lenguaje de Marcado de Hipertexto | Células Plenum</title>
+    <meta name="description" content="Tema 3.2 del Módulo 3: HTML - Lenguaje de Marcado de Hipertexto - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 3: Desarrollo Web y Tecnologías Emergentes</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 3/tema_3_3.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="HTML - Lenguaje de Marcado de Hipertexto" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_1.html" class="topic-name">3.1 Fundamentos de Desarrollo Web</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_2.html" class="topic-name">3.2 HTML - Lenguaje de Marcado</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_3.html" class="topic-name">3.3 CSS - Hojas de Estilo</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_4.html" class="topic-name">3.4 JavaScript</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_5.html" class="topic-name">3.5 Frameworks de Desarrollo</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_6.html" class="topic-name">3.6 Evaluación Final</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 3.2: HTML - Lenguaje de Marcado de Hipertexto</h1>
+            <div class="intro-text">
+                <p>
+                    <strong>HTML (HyperText Markup Language)</strong> es el lenguaje fundamental para crear páginas web. 
+                    Define la estructura y el contenido de una página mediante el uso de etiquetas (tags) 
+                    que describen los diferentes elementos como títulos, párrafos, imágenes, enlaces y formularios.
+                </p>
+                <p>
+                    En este tema estudiaremos los fundamentos del lenguaje HTML, etiquetas básicas y avanzadas, 
+                    estructura semántica de documentos y las mejores prácticas para crear páginas web 
+                    accesibles y bien estructuradas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/sIO8kb5b6D0" 
+                    title="HTML: conceptos básicos"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.2.1 HTML: conceptos básicos</h3>
+                <p class="video-desc">
+                    Introducción completa a los conceptos fundamentales de HTML, 
+                    incluyendo estructura básica, etiquetas esenciales y primeros pasos 
+                    en el desarrollo web.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/-oK6zL01fNM" 
+                    title="Fundamentos HTML"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.2.2 Fundamentos HTML</h3>
+                <p class="video-desc">
+                    Explicación detallada de los fundamentos de HTML, cubriendo sintaxis, 
+                    elementos estructurales y prácticas recomendadas para crear documentos 
+                    HTML válidos y semánticos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos opcionales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Contenido Opcional</h2>
+            
+            <!-- Tutorial W3Schools -->
+            <div class="video-info">
+                <h3 class="video-title">W3Schools HTML - Tutorial Completo</h3>
+                <p class="video-desc">
+                    Tutorial completo e interactivo de HTML en W3Schools, con ejemplos prácticos, 
+                    referencias de todas las etiquetas y ejercicios para practicar cada concepto.
+                </p>
+                <a href="https://www.w3schools.com/" target="_blank" class="btn btn-download" style="margin-top: 1rem;">
+                    <i class="fas fa-external-link-alt"></i> Ver Tutorial en W3Schools
+                </a>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Estructura Básica HTML</h3>
+                    <p>Todo documento HTML tiene una estructura fundamental: <strong>&lt;!DOCTYPE html&gt;</strong> (declaración), <strong>&lt;html&gt;</strong> (elemento raíz), <strong>&lt;head&gt;</strong> (metadatos), y <strong>&lt;body&gt;</strong> (contenido visible). Incluye elementos esenciales como <strong>&lt;title&gt;</strong>, <strong>&lt;meta charset="UTF-8"&gt;</strong>, y <strong>&lt;viewport&gt;</strong>.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-heading"></i>
+                    </div>
+                    <h3>Etiquetas de Texto y Encabezados</h3>
+                    <p>HTML proporciona etiquetas para estructurar texto: <strong>&lt;h1&gt; a &lt;h6&gt;</strong> (encabezados), <strong>&lt;p&gt;</strong> (párrafos), <strong>&lt;strong&gt;</strong> y <strong>&lt;em&gt;</strong> (énfasis), <strong>&lt;br&gt;</strong> (salto de línea), <strong>&lt;hr&gt;</strong> (línea horizontal). Los encabezados siguen jerarquía semántica.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Enlaces e Imágenes</h3>
+                    <p>Elementos multimedia y de navegación: <strong>&lt;a href=""&gt;</strong> (enlaces), <strong>&lt;img src="" alt=""&gt;</strong> (imágenes), <strong>&lt;ul&gt;</strong> y <strong>&lt;ol&gt;</strong> (listas), <strong>&lt;table&gt;</strong> (tablas). El atributo <strong>alt</strong> en imágenes es esencial para accesibilidad.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Elementos Semánticos HTML5</h3>
+                    <p>HTML5 introdujo elementos semánticos que mejoran la estructura y accesibilidad: <strong>&lt;header&gt;</strong>, <strong>&lt;nav&gt;</strong>, <strong>&lt;main&gt;</strong>, <strong>&lt;section&gt;</strong>, <strong>&lt;article&gt;</strong>, <strong>&lt;aside&gt;</strong>, y <strong>&lt;footer&gt;</strong>. Estos elementos describen mejor el contenido.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Formularios y Entrada de Datos</h3>
+                    <p>Elementos para capturar información del usuario: <strong>&lt;form&gt;</strong> (contenedor), <strong>&lt;input&gt;</strong> (diferentes tipos), <strong>&lt;textarea&gt;</strong> (texto multilínea), <strong>&lt;select&gt;</strong> (lista desplegable), <strong>&lt;button&gt;</strong> (botones). Atributos como <strong>required</strong> y <strong>placeholder</strong> mejoran UX.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Validación y Mejores Prácticas</h3>
+                    <p>HTML válido sigue estándares W3C. Mejores prácticas: <strong>HTML semántico</strong>, <strong>atributos alt en imágenes</strong>, <strong>estructura lógica</strong>, <strong>accesibilidad</strong> (ARIA), y <strong>validación de código</strong>. Usar el validador W3C para verificar corrección.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Características Fundamentales de HTML</h3>
+                <ul>
+                    <li><strong>Lenguaje de marcado:</strong> No es un lenguaje de programación, describe estructura</li>
+                    <li><strong>Basado en etiquetas:</strong> Usa elementos delimitados por &lt; &gt;</li>
+                    <li><strong>Jerárquico:</strong> Elementos anidados forman un árbol DOM</li>
+                    <li><strong>Plataforma cruzada:</strong> Funciona en todos los navegadores y dispositivos</li>
+                    <li><strong>Accesible:</strong> Puede ser interpretado por tecnologías asistivas</li>
+                    <li><strong>Extensible:</strong> Se integra con CSS y JavaScript</li>
+                    <li><strong>Estándar abierto:</strong> Mantenido por W3C y WHATWG</li>
+                    <li><strong>Semántico:</strong> Los elementos describen su contenido</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ejemplo de estructura -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Ejemplo de Estructura para el Micrositio</h2>
+            
+            <div class="intro-text">
+                <div class="key-points">
+                    <h3>Estructura Recomendada del Proyecto</h3>
+                    <ul>
+                        <li><strong>index.html</strong> - Página principal con introducción y navegación</li>
+                        <li><strong>modulo1.html</strong> - Contenido completo del Módulo 1</li>
+                        <li><strong>modulo2.html</strong> - Contenido completo del Módulo 2</li>
+                        <li><strong>modulo3.html</strong> - Contenido completo del Módulo 3</li>
+                        <li><strong>temas-detalle/</strong> - Carpeta con páginas individuales para cada tema</li>
+                    </ul>
+                    
+                    <h4>Elementos HTML a Incluir:</h4>
+                    <ul>
+                        <li><strong>Estructura semántica:</strong> &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;</li>
+                        <li><strong>Navegación:</strong> &lt;nav&gt; con &lt;ul&gt; y &lt;li&gt; para menús</li>
+                        <li><strong>Contenido:</strong> &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;article&gt;, &lt;aside&gt;</li>
+                        <li><strong>Multimedia:</strong> &lt;img&gt;, &lt;video&gt;, &lt;iframe&gt; (para videos incrustados)</li>
+                        <li><strong>Tablas:</strong> &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;, &lt;td&gt; para datos estructurados</li>
+                        <li><strong>Formularios:</strong> &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; para interacción</li>
+                        <li><strong>Enlaces:</strong> &lt;a&gt; con atributo href para navegación interna y externa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 3.2: HTML - Lenguaje de Marcado de Hipertexto</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre HTML, etiquetas básicas y avanzadas, 
+                    estructura semántica, formularios, tablas, multimedia y mejores prácticas 
+                    para crear páginas web accesibles y válidas según estándares W3C.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 3/tema 3.2 .pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 3/tema 3.2 .pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 3/tema_3_1.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 3.1 Fundamentos Web
+            </a>
+            <a href="/src/pages/unidad 3/tema_3_3.html" class="nav-btn next">
+                Siguiente Tema: 3.3 CSS <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 3.2: HTML - Lenguaje de Marcado de Hipertexto</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

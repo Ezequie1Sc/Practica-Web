@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Células Plenum - Formación en Ingeniería de Software</title>
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   
+<body>
+
+    <!-- Barra de progreso -->
+    <div class="progress-wrapper">
+        <div class="progress-fill" id="progressBar"></div>
+    </div>
+
+    <!-- Header-->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+
+
+            
+            <!-- Logo -->
+            <a class="navbar-brand" href="/index.html">
+                <img src="assets/logos/logo.png" alt="Plenumsoft" class="logo-plenumsoft logo-pulse" style="height: 45px;">
+            </a>
+            
+            <!-- Boton hamburguesa -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contenido del navbar -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Menú de navegación -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-custom-link active" href="/index.html">
+                            <i class="fas fa-home"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-custom-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-custom-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-custom-link" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-globe"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Botones de sesión -->
+                <div class="nav-buttons d-flex gap-2 align-items-center">
+                    <a href="#" class="btn-login">Iniciar Sesión</a>
+                    <a href="#" class="btn-register">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                     Formación en<br>
+                        <span>Ingeniería de Software</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Desarrolla habilidades prácticas con nuestro programa de formación especializada
+                        y prepárate para los desafíos tecnológicos del futuro.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="src/pages/unidad 1/index_moduloUno.html" class="hero-btn hero-btn-primary">
+                            <i class="fas fa-rocket"></i> Comenzar Ahora
+                        </a>
+                        <a href="#temario" class="hero-btn hero-btn-secondary">
+                            <i class="fas fa-list"></i> Ver Temario Completo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="/assets/AS.png" alt="Estudiantes del programa" class="hero-main-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OBJETIVOS -->
+        <section class="objetivos-section">
+            <div class="container">
+                <div class="objetivos-header">
+                    <h2 class="title">Nuestros Objetivos</h2>
+                    <p class="subtitle">
+                        Impulsamos el aprendizaje práctico y la innovación tecnológica en cada estudiante.
+                    </p>
+                </div>
+
+                <div class="objetivos-grid">
+                    <!-- Objetivo 1 -->
+                    <div class="objetivo-card">
+                        <div class="objetivo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="objetivo-title">Formación Integral</h3>
+                        <p class="objetivo-text">
+                            Desarrollamos profesionales completos con habilidades técnicas y humanas 
+                            para enfrentar los desafíos del mundo tecnológico actual.
+                        </p>
+                        <ul class="objetivo-features">
+                            <li><i class="fas fa-check"></i> Habilidades técnicas avanzadas</li>
+                            <li><i class="fas fa-check"></i> Competencias profesionales</li>
+                            <li><i class="fas fa-check"></i> Desarrollo personal</li>
+                        </ul>
+                    </div>
+
+                    <!-- Objetivo 2 -->
+                    <div class="objetivo-card">
+                        <div class="objetivo-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="objetivo-title">Innovación Continua</h3>
+                        <p class="objetivo-text">
+                            Fomentamos la creatividad y el pensamiento innovador para desarrollar 
+                            soluciones tecnológicas que transformen el futuro.
+                        </p>
+                        <ul class="objetivo-features">
+                            <li><i class="fas fa-check"></i> Pensamiento creativo</li>
+                            <li><i class="fas fa-check"></i> Resolución de problemas</li>
+                            <li><i class="fas fa-check"></i> Proyectos innovadores</li>
+                        </ul>
+                    </div>
+
+                    <!-- Objetivo 3 -->
+                    <div class="objetivo-card">
+                        <div class="objetivo-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="objetivo-title">Impacto Social</h3>
+                        <p class="objetivo-text">
+                            Preparamos estudiantes para crear soluciones con impacto real 
+                            que beneficien a la sociedad y al sector empresarial.
+                        </p>
+                        <ul class="objetivo-features">
+                            <li><i class="fas fa-check"></i> Proyectos con impacto</li>
+                            <li><i class="fas fa-check"></i> Colaboración comunitaria</li>
+                            <li><i class="fas fa-check"></i> Desarrollo sostenible</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Estadísticas  -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">500+</h3>
+                            <p class="stat-label">Proyectos Completados</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">1000+</h3>
+                            <p class="stat-label">Estudiantes Formados</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">100%</h3>
+                            <p class="stat-label">Éxito en Dual</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- SECCIÓN TEMARIO -->
+        <section id="temario" class="temario-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Temario del Programa</h2>
+                    <p class="lead">Descubre los módulos que conforman este curso y todo lo que aprenderás en cada uno.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Módulo 1 -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="module-image card-img-top" style="height: 200px; background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"></div>
+                            <div class="card-body">
+                                <h3 class="card-title h5">Módulo 1: Inducción</h3>
+                                <span class="badge bg-light text-dark mb-3"><i class="far fa-clock"></i> 1 semana</span>
+                                <ul class="list-unstyled mb-3">
+                                    <li class="mb-2"><a href="/src/pages/unidad 1/tema_1_1.html">1.1 Visión General de Ingeniería de Software</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 1/tema_1_2.html">1.2 Requerimientos</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 1/tema_1_3.html">1.3 Arquitectura</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 1/tema_1_4.html">1.4 Patrones de Diseño</a></li>
+                                </ul>
+                                <a href="/src/pages/unidad 1/index_moduloUno.html" class="btn btn-primary w-100">Acceder al Módulo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 2 -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="module-image card-img-top" style="height: 200px; background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"></div>
+                            <div class="card-body">
+                                <h3 class="card-title h5">Módulo 2: Programación</h3>
+                                <span class="badge bg-light text-dark mb-3"><i class="far fa-clock"></i> 12 días</span>
+                                <ul class="list-unstyled mb-3">
+                                    <li class="mb-2"><a href="/src/pages/unidad 2/tema_2_1.html">2.1 Bases de Datos</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 2/tema_2_2.html">2.2 Normalización</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 2/tema_2_3.html">2.3 SQL</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 2/tema_2_4.html">2.4 Triggers</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 2/tema_2_5.html">2.5 Paradigmas</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 2/tema_2_6.html">2.6 Java y POO</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 2/tema_2_7.html">2.7 APIs</a></li>
+                                </ul>
+                                <a href="/src/pages/unidad 2/index.moduloDos.html" class="btn btn-primary w-100">Acceder al Módulo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 3 -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="module-image card-img-top" style="height: 200px; background-image: url('https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"></div>
+                            <div class="card-body">
+                                <h3 class="card-title h5">Módulo 3: Desarrollo Web</h3>
+                                <span class="badge bg-light text-dark mb-3"><i class="far fa-clock"></i> 22 días</span>
+                                <ul class="list-unstyled mb-3">
+                                    <li class="mb-2"><a href="/src/pages/unidad 3/tema_3_1.html">3.1 Fundamentos Web</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 3/tema_3_2.html">3.2 HTML</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 3/tema_3_3.html">3.3 CSS</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 3/tema_3_4.html">3.4 Bootstrap</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 3/tema_3_5.html">3.5 JavaScript</a></li>
+                                    <li class="mb-2"><a href="/src/pages/unidad 3/evaluacion_final_modulo_3.html"><i class="fas fa-check-circle"></i> Evaluación Final</a></li>
+                                </ul>
+                                <a href="/src/pages/unidad 3/index_moduloTres.html" 
+                                class="btn btn-primary w-100">Acceder al Módulo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" aria-label="Pie de página">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Logo Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="Logo TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="Logo ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Plenumsoft</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top" aria-label="Volver al inicio">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+</html>

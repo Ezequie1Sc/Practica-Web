@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 2.3: Lenguaje de Consulta Estructurado (SQL) | Células Plenum</title>
+    <meta name="description" content="Tema 2.3 del Módulo 2: Lenguaje de Consulta Estructurado (SQL) - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado UNIFICADO -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar CORREGIDO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 2: Fundamentos de Programación</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 2/index.moduloDos.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 2/tema_2_4.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Lenguaje de Consulta Estructurado (SQL)" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_1.html" class="topic-name">2.1 Fundamentos de Bases de Datos</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_2.html" class="topic-name">2.2 Normalización de Bases de Datos</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_3.html" class="topic-name">2.3 Lenguaje de Consulta Estructurado (SQL)</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_4.html" class="topic-name">2.4 Triggers en Bases de Datos</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_5.html" class="topic-name">2.5 Paradigmas de Programación</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_6.html" class="topic-name">2.6 Java y Programación Orientada a Objetos</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_7.html" class="topic-name">2.7 Arquitectura de Software y APIs</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 2.3: Lenguaje de Consulta Estructurado (SQL)</h1>
+            <div class="intro-text">
+                <p>
+                    El <strong>Lenguaje de Consulta Estructurado (SQL)</strong> es el estándar universal para interactuar 
+                    con bases de datos relacionales. Permite crear, modificar, consultar y administrar datos 
+                    de manera eficiente y segura.
+                </p>
+                <p>
+                    En este tema exploraremos desde los fundamentos básicos de SQL hasta consultas avanzadas, 
+                    incluyendo diferentes tipos de JOIN, funciones de agregación, subconsultas y las operaciones 
+                    esenciales para el manejo profesional de bases de datos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/HlRhFDY1Bmg" 
+                    title="Conceptos básicos de SQL"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.3.1 Conceptos básicos de SQL</h3>
+                <p class="video-desc">
+                    Introducción completa a los conceptos fundamentales del lenguaje SQL, 
+                    incluyendo sintaxis básica, tipos de datos y operaciones esenciales.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PLU8oAlHdN5Bmx-LChV4K3MbHrpZKefNwn" 
+                    title="CursoSQL - Playlist Completa"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.3.2 CursoSQL - Playlist Completa</h3>
+                <p class="video-desc">
+                    Serie completa que cubre todos los aspectos del lenguaje SQL, desde consultas básicas 
+                    hasta operaciones avanzadas, funciones y optimización.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos opcionales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Contenido Opcional</h2>
+            
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PLTt_5WPJqE-l90KDcxe1njAvDqwhrvbLV" 
+                    title="Oracle PL/SQL - Playlist"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Oracle PL/SQL</h3>
+                <p class="video-desc">
+                    Lista de reproducción especializada en Oracle PL/SQL, cubriendo programación 
+                    procedural, stored procedures, funciones y triggers específicos de Oracle.
+                </p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/PodbAFmHYq8" 
+                    title="SQL Avanzado 1"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">SQL Avanzado 1</h3>
+                <p class="video-desc">
+                    Técnicas avanzadas de SQL incluyendo consultas complejas, optimización 
+                    y mejores prácticas para el desarrollo profesional.
+                </p>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/siu5YXqYlwY" 
+                    title="SQL Avanzado 2"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">SQL Avanzado 2</h3>
+                <p class="video-desc">
+                    Continuación de técnicas avanzadas con enfoque en rendimiento, 
+                    consultas anidadas y manejo de grandes volúmenes de datos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>DDL - Data Definition Language</h3>
+                    <p>Comandos para definir estructuras de base de datos: <strong>CREATE</strong> (crear tablas), <strong>ALTER</strong> (modificar estructura), <strong>DROP</strong> (eliminar objetos), y <strong>TRUNCATE</strong> (vaciar tablas). Permiten gestionar el esquema de la base de datos de manera permanente.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>DML - Data Manipulation Language</h3>
+                    <p>Comandos para manipular datos: <strong>SELECT</strong> (consultar), <strong>INSERT</strong> (agregar), <strong>UPDATE</strong> (modificar), y <strong>DELETE</strong> (eliminar). Son las operaciones más utilizadas en el día a día con bases de datos.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>DCL - Data Control Language</h3>
+                    <p>Comandos para control de acceso: <strong>GRANT</strong> (otorgar permisos), <strong>REVOKE</strong> (revocar permisos). Gestionan la seguridad y los privilegios de los usuarios sobre los objetos de la base de datos.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>JOINs en SQL</h3>
+                    <p>Operaciones para combinar datos de múltiples tablas: <strong>INNER JOIN</strong> (intersección), <strong>LEFT JOIN</strong> (todos izquierda + coincidencias), <strong>RIGHT JOIN</strong> (todos derecha + coincidencias), <strong>FULL OUTER JOIN</strong> (unión completa).</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Funciones de Agregación</h3>
+                    <p>Funciones para realizar cálculos sobre conjuntos de datos: <strong>COUNT</strong> (contar), <strong>SUM</strong> (sumar), <strong>AVG</strong> (promedio), <strong>MAX</strong> (máximo), <strong>MIN</strong> (mínimo). Se usan con GROUP BY para agrupar resultados.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Subconsultas y Consultas Anidadas</h3>
+                    <p>Técnicas avanzadas que permiten consultas dentro de consultas. Pueden ser <strong>correlacionadas</strong> (dependen de la consulta externa) o <strong>no correlacionadas</strong> (independientes). Útiles para consultas complejas.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Características Fundamentales de SQL</h3>
+                <ul>
+                    <li><strong>Estándar universal:</strong> Compatible con la mayoría de sistemas de gestión de bases de datos</li>
+                    <li><strong>Lenguaje declarativo:</strong> Especificas QUÉ quieres, no CÓMO obtenerlo</li>
+                    <li><strong>Potente y flexible:</strong> Capacidad para consultas simples y complejas</li>
+                    <li><strong>Seguridad integrada:</strong> Mecanismos de control de acceso granular</li>
+                    <li><strong>Transaccional:</strong> Soporte para operaciones ACID</li>
+                    <li><strong>Escalable:</strong> Eficiente con pequeños y grandes volúmenes de datos</li>
+                    <li><strong>Extensible:</strong> Funciones definidas por el usuario y procedimientos almacenados</li>
+                    <li><strong>Portable:</strong> Misma sintaxis básica entre diferentes DBMS</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 2.3: Lenguaje de Consulta Estructurado (SQL)</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre SQL, ejemplos prácticos de todas las operaciones, 
+                    sintaxis completa, ejercicios resueltos y mejores prácticas para el desarrollo con bases de datos.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 2/Tema 2.3.pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 2/Tema 2.3.pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 2/tema_2_2.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 2.2 Normalización
+            </a>
+            <a href="/src/pages/unidad 2/tema_2_4.html" class="nav-btn next">
+                Siguiente Tema: 2.4 Triggers <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 2.3: Lenguaje de Consulta Estructurado (SQL)</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+</body>
+</html>

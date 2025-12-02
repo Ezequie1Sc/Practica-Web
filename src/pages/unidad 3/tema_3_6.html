@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluación Final - Módulo 3 | Células Plenum</title>
+    <meta name="description" content="Evaluación Final del Módulo 3: Desarrollo Web y Tecnologías Emergentes - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 3: Desarrollo Web y Tecnologías Emergentes</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/index.html" class="nav-arrow">
+                        Volver al Inicio <i class="fas fa-home"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Evaluación Final del Módulo 3" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_1.html" class="topic-name">3.1 Fundamentos de Desarrollo Web</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_2.html" class="topic-name">3.2 HTML - Lenguaje de Marcado</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_3.html" class="topic-name">3.3 CSS - Hojas de Estilo</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_4.html" class="topic-name">3.4 Bootstrap - Framework CSS</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_5.html" class="topic-name">3.5 JavaScript - Programación</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/evaluacion_final.html" class="topic-name">Evaluación Final Módulo 3</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Evaluación Final del Módulo 3</h1>
+            <div class="intro-text">
+                <p>
+                    La <strong>Evaluación Final</strong> del Módulo 3 representa la culminación de tu aprendizaje 
+                    en desarrollo web. Este proyecto integrador te permitirá demostrar todas las habilidades 
+                    y conocimientos adquiridos a lo largo del módulo, combinando HTML, CSS, Bootstrap y JavaScript 
+                    en una aplicación web completa y funcional.
+                </p>
+                <p>
+                    Este proyecto no solo evaluará tu capacidad técnica, sino también tu creatividad, 
+                    organización y habilidades para resolver problemas reales mediante el desarrollo web moderno.
+                </p>
+            </div>
+        </section>
+
+        <!-- Requisitos del Proyecto -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Requisitos del Proyecto Final</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>HTML5 Semántico</h3>
+                    <p>Estructura semántica correcta utilizando elementos como <strong>&lt;header&gt;</strong>, <strong>&lt;nav&gt;</strong>, <strong>&lt;main&gt;</strong>, <strong>&lt;section&gt;</strong>, <strong>&lt;article&gt;</strong>, y <strong>&lt;footer&gt;</strong>. Código validado y bien formado siguiendo estándares W3C.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>CSS3 Avanzado</h3>
+                    <p>Estilos personalizados que incluyan: <strong>Flexbox/Grid</strong> para layout, <strong>animaciones CSS</strong>, <strong>diseño responsivo</strong> con media queries, y <strong>variables CSS</strong> para mantener consistencia.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h3>Bootstrap Integrado</h3>
+                    <p>Implementación de componentes de Bootstrap como <strong>navbar</strong>, <strong>cards</strong>, <strong>forms</strong>, y <strong>modal</strong>. Uso del <strong>sistema de grid</strong> de Bootstrap combinado con estilos personalizados.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript Interactivo</h3>
+                    <p>Funcionalidades implementadas con JavaScript vanilla: <strong>manipulación del DOM</strong>, <strong>manejo de eventos</strong>, <strong>validación de formularios</strong>, y <strong>cambios dinámicos</strong> en la interfaz.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>AJAX y APIs</h3>
+                    <p>Implementación de al menos una petición <strong>AJAX</strong> utilizando Fetch API para consumir datos de una API externa o simular interacción con un servidor.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Diseño Responsivo</h3>
+                    <p>Sitio completamente responsivo que funcione correctamente en <strong>dispositivos móviles</strong>, <strong>tablets</strong> y <strong>desktop</strong>. Experiencia de usuario optimizada para todos los tamaños de pantalla.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Criterios de Evaluación -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Criterios de Evaluación</h2>
+            
+            <div class="key-points">
+                <h3>Rúbrica de Calificación</h3>
+                <ul>
+                    <li><strong>Estructura y Semántica HTML (20%):</strong> Uso correcto de elementos semánticos, estructura lógica, validación de código</li>
+                    <li><strong>Estilos y Diseño CSS (20%):</strong> Calidad del diseño, originalidad, consistencia visual, diseño responsivo</li>
+                    <li><strong>Integración de Bootstrap (15%):</strong> Uso apropiado de componentes, personalización efectiva, grid responsivo</li>
+                    <li><strong>Funcionalidad JavaScript (25%):</strong> Interactividad, manejo de eventos, manipulación del DOM, validaciones</li>
+                    <li><strong>AJAX y Asincronía (10%):</strong> Implementación correcta de peticiones asíncronas, manejo de respuestas y errores</li>
+                    <li><strong>Organización y Calidad de Código (10%):</strong> Estructura de archivos, comentarios, nomenclatura, legibilidad</li>
+                </ul>
+                
+                <h4>Puntos Adicionales:</h4>
+                <ul>
+                    <li><strong>+5% Creatividad:</strong> Soluciones innovadoras y diseño original</li>
+                    <li><strong>+5% Funcionalidades Extra:</strong> Características adicionales no requeridas</li>
+                    <li><strong>+5% Optimización:</strong> Performance, accesibilidad, SEO básico</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Recomendaciones -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Recomendaciones para el Proyecto</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Ideas de Proyecto</h3>
+                    <p><strong>Portafolio personal:</strong> Exhibe tus proyectos y habilidades<br>
+                    <strong>Tienda online:</strong> Catálogo de productos con carrito<br>
+                    <strong>Blog personal:</strong> Sistema de publicaciones y comentarios<br>
+                    <strong>Aplicación de tareas:</strong> Gestor de actividades con CRUD</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Herramientas Sugeridas</h3>
+                    <p><strong>Editores:</strong> VS Code, Sublime Text<br>
+                    <strong>Control de versiones:</strong> Git y GitHub<br>
+                    <strong>APIs públicas:</strong> JSONPlaceholder, OpenWeatherMap<br>
+                    <strong>Validadores:</strong> W3C Validator, Lighthouse</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Mejores Prácticas</h3>
+                    <p><strong>Mobile-first:</strong> Diseña primero para móviles<br>
+                    <strong>Progressive Enhancement:</strong> Funcionalidad básica primero<br>
+                    <strong>Performance:</strong> Optimiza imágenes y código<br>
+                    <strong>Accesibilidad:</strong> Considera todos los usuarios</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recursos de Apoyo -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Recursos de Apoyo</h2>
+            
+            <div class="intro-text">
+                <div class="key-points">
+                    <h3>Materiales de Consulta</h3>
+                    
+                    <div class="research-grid">
+                        <div class="research-card">
+                            <h4>Documentación Oficial</h4>
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN HTML</a></li>
+                                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN CSS</a></li>
+                                <li><a href="https://getbootstrap.com/docs/" target="_blank">Bootstrap Docs</a></li>
+                                <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN JavaScript</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="research-card">
+                            <h4>Herramientas Útiles</h4>
+                            <ul>
+                                <li><a href="https://validator.w3.org/" target="_blank">Validador HTML</a></li>
+                                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validador CSS</a></li>
+                                <li><a href="https://jsonplaceholder.typicode.com/" target="_blank">API de Prueba</a></li>
+                                <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="research-card">
+                            <h4>Inspiración</h4>
+                            <ul>
+                                <li><a href="https://dribbble.com/" target="_blank">Dribbble (Diseño)</a></li>
+                                <li><a href="https://awwwards.com/" target="_blank">Awwwards (Webs)</a></li>
+                                <li><a href="https://codepen.io/" target="_blank">CodePen (Ejemplos)</a></li>
+                                <li><a href="https://github.com/" target="_blank">GitHub (Proyectos)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 3/tema_3_5.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 3.5 JavaScript
+            </a>
+            <a href="/index.html" class="nav-btn next">
+                Volver al Inicio <i class="fas fa-home"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Evaluación Final del Módulo 3</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 3.5: JavaScript - Programación del Lado del Cliente | Células Plenum</title>
+    <meta name="description" content="Tema 3.5 del Módulo 3: JavaScript - Programación del Lado del Cliente - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 3: Desarrollo Web y Tecnologías Emergentes</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 3/tema_3_6.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="JavaScript - Programación del Lado del Cliente" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_1.html" class="topic-name">3.1 Fundamentos de Desarrollo Web</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_2.html" class="topic-name">3.2 HTML - Lenguaje de Marcado</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_3.html" class="topic-name">3.3 CSS - Hojas de Estilo</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_4.html" class="topic-name">3.4 Bootstrap - Framework CSS</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_5.html" class="topic-name">3.5 JavaScript - Programación</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_6.html" class="topic-name">3.6 Evaluación Final</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 3.5: JavaScript - Programación del Lado del Cliente</h1>
+            <div class="intro-text">
+                <p>
+                    <strong>JavaScript</strong> es el lenguaje de programación más importante para el desarrollo web frontend, 
+                    permitiendo crear páginas web interactivas, dinámicas y responsivas. 
+                    Es un lenguaje interpretado que se ejecuta en el navegador del cliente 
+                    y se ha convertido en fundamental para la web moderna.
+                </p>
+                <p>
+                    En este tema exploraremos desde los fundamentos de JavaScript hasta técnicas avanzadas 
+                    como manipulación del DOM, programación asíncrona, AJAX y el uso de APIs modernas. 
+                    Aprenderemos a crear experiencias web interactivas y dinámicas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/xmqhnr4Lv-c" 
+                    title="JavaScript no era útil"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.5.1 JavaScript no era útil</h3>
+                <p class="video-desc">
+                    Perspectiva histórica sobre la evolución de JavaScript, 
+                    desde sus humildes comienzos hasta convertirse en uno de los lenguajes 
+                    más importantes del desarrollo web moderno.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/iXf90OstEK4" 
+                    title="JavaScript: historia"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.5.2 JavaScript: historia</h3>
+                <p class="video-desc">
+                    Recorrido detallado por la historia de JavaScript, 
+                    sus principales hitos, estandarización y cómo llegó 
+                    a dominar el desarrollo web frontend.
+                </p>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA" 
+                    title="Curso JavaScript"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.5.3 Curso JavaScript</h3>
+                <p class="video-desc">
+                    Curso completo de JavaScript que cubre desde los fundamentos básicos 
+                    hasta conceptos avanzados, incluyendo ejercicios prácticos 
+                    y proyectos reales.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos opcionales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Contenido Opcional</h2>
+            
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/wjB-cT17cEU" 
+                    title="JavaScript Avanzado 1"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">JavaScript Avanzado 1</h3>
+                <p class="video-desc">
+                    Técnicas avanzadas de JavaScript incluyendo closures, 
+                    prototipos, programación funcional y patrones de diseño 
+                    específicos del lenguaje.
+                </p>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/NibsUd_InPU" 
+                    title="JavaScript Avanzado 2"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">JavaScript Avanzado 2</h3>
+                <p class="video-desc">
+                    Continuación de técnicas avanzadas con enfoque en 
+                    asincronía, promesas, async/await y manejo avanzado 
+                    de eventos y APIs del navegador.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>Fundamentos de JavaScript</h3>
+                    <p>JavaScript es un lenguaje <strong>interpretado</strong>, <strong>dinámico</strong> y <strong>débilmente tipado</strong>. Conceptos esenciales: <strong>variables</strong> (let, const, var), <strong>tipos de datos</strong> (primitivos y objetos), <strong>funciones</strong>, <strong>estructuras de control</strong> (if, for, while), y <strong>operadores</strong>. Usa el estándar ECMAScript.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Manipulación del DOM</h3>
+                    <p>El <strong>Document Object Model (DOM)</strong> representa la estructura HTML como árbol de objetos. JavaScript puede: <strong>seleccionar elementos</strong> (getElementById, querySelector), <strong>modificar contenido</strong> (innerHTML, textContent), <strong>cambiar estilos</strong> (style.property), y <strong>manejar eventos</strong> (addEventListener).</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Programación Asíncrona</h3>
+                    <p>JavaScript maneja operaciones asíncronas mediante: <strong>callbacks</strong>, <strong>promesas</strong> (then/catch), y <strong>async/await</strong>. Esto permite ejecutar código sin bloquear el hilo principal, esencial para operaciones de red, temporizadores y E/S.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>AJAX y Fetch API</h3>
+                    <p><strong>AJAX</strong> (Asynchronous JavaScript and XML) permite comunicación asíncrona con servidores. La <strong>Fetch API</strong> moderna reemplaza XMLHttpRequest: fetch(url).then(response => response.json()). Permite crear aplicaciones web dinámicas sin recargar la página.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>ES6+ y Características Modernas</h3>
+                    <p>ECMAScript 6+ introdujo: <strong>arrow functions</strong>, <strong>template literals</strong>, <strong>destructuring</strong>, <strong>spread/rest operators</strong>, <strong>classes</strong>, y <strong>módulos</strong>. Estas características mejoran la legibilidad, mantenibilidad y potencia del lenguaje.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Buenas Prácticas y Depuración</h3>
+                    <p>Mejores prácticas: <strong>código modular</strong>, <strong>manejo de errores</strong> (try/catch), <strong>validación de datos</strong>, y <strong>optimización de performance</strong>. Herramientas de depuración: <strong>console</strong> métodos, <strong>debugger</strong>, y DevTools del navegador.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Características Fundamentales de JavaScript</h3>
+                <ul>
+                    <li><strong>Lenguaje del lado del cliente:</strong> Se ejecuta en el navegador del usuario</li>
+                    <li><strong>Interpretado:</strong> No necesita compilación previa</li>
+                    <li><strong>Orientado a objetos basado en prototipos:</strong> No usa clases tradicionales (hasta ES6)</li>
+                    <li><strong>Funciones de primera clase:</strong> Las funciones pueden ser asignadas a variables</li>
+                    <li><strong>Asíncrono y no bloqueante:</strong> Maneja operaciones concurrentes eficientemente</li>
+                    <li><strong>Dinámico:</strong> Tipado débil y estructura flexible</li>
+                    <li><strong>Multi-paradigma:</strong> Soporta programación procedural, OOP y funcional</li>
+                    <li><strong>Universal:</strong> Funciona en todos los navegadores modernos</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Laboratorio 1 - Lógica de Programación -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Laboratorio 1 - Lógica de Programación</h2>
+            
+            <div class="intro-text">
+                <p><strong>Ejercicios de Lógica de Programación</strong></p>
+                
+                <div class="key-points">
+                    <h3>Instrucciones del Laboratorio 1</h3>
+                    <ul>
+                        <li><strong>Metodología:</strong> Ver las instrucciones de cada ejercicio, pausar el video para realizarlo, y luego comparar con la solución propuesta por Jonathan MirCha</li>
+                        <li><strong>Repaso:</strong> Se pueden repasar los videos anteriores las veces que sea necesario</li>
+                        <li><strong>Cobertura completa:</strong> Elaborar TODOS los ejercicios de lógica de programación</li>
+                        <li><strong>Práctica:</strong> Estos ejercicios son fundamentales para desarrollar el pensamiento algorítmico</li>
+                    </ul>
+                    
+                    <h4>Temas de Lógica de Programación:</h4>
+                    <ul>
+                        <li><strong>Variables y operadores:</strong> Declaración, asignación, operaciones matemáticas</li>
+                        <li><strong>Estructuras de control:</strong> Condicionales (if/else, switch), bucles (for, while)</li>
+                        <li><strong>Funciones:</strong> Definición, parámetros, retorno de valores</li>
+                        <li><strong>Arrays y objetos:</strong> Manipulación de estructuras de datos</li>
+                        <li><strong>Algoritmos básicos:</strong> Búsqueda, ordenamiento, patrones</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Evaluación Laboratorio 1 -->
+            <div class="research-section" style="margin-top: 2rem;">
+                <h3 class="section-title" style="font-size: 1.5rem;">Evaluación Laboratorio 1 - Lógica de Programación</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; margin: 1.5rem 0; border: 2px solid #e2e8f0;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="background: #f8fafc;">
+                            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; width: 40%;">Actividad</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 2px solid #e2e8f0; width: 30%;">Primera Entrega</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 2px solid #e2e8f0; width: 30%;">Segunda Entrega</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Subir ejercicios de lógica de programación</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #e2e8f0;">
+                                <button class="btn btn-download" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                    <i class="fas fa-upload"></i> Subir Primera Entrega
+                                </button>
+                            </td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #e2e8f0;">
+                                <button class="btn btn-download" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                    <i class="fas fa-upload"></i> Subir Segunda Entrega
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Laboratorio 2 - HTML DOM -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Laboratorio 2 - HTML DOM</h2>
+            
+            <div class="intro-text">
+                <p><strong>Ejercicios de Manipulación del DOM</strong></p>
+                
+                <div class="key-points">
+                    <h3>Instrucciones del Laboratorio 2</h3>
+                    <ul>
+                        <li><strong>Metodología:</strong> Ver las instrucciones de cada ejercicio, pausar el video para realizarlo, y luego comparar con la solución propuesta por Jonathan MirCha</li>
+                        <li><strong>Repaso:</strong> Se pueden repasar los videos anteriores las veces que sea necesario</li>
+                        <li><strong>Cobertura completa:</strong> Elaborar TODOS los ejercicios de HTML DOM</li>
+                        <li><strong>Enfoque práctico:</strong> Estos ejercicios desarrollan habilidades esenciales para crear interfaces interactivas</li>
+                    </ul>
+                    
+                    <h4>Temas de HTML DOM:</h4>
+                    <ul>
+                        <li><strong>Selección de elementos:</strong> Métodos getElementById, querySelector, etc.</li>
+                        <li><strong>Manipulación de contenido:</strong> innerHTML, textContent, value</li>
+                        <li><strong>Modificación de estilos:</strong> style property, classList</li>
+                        <li><strong>Manejo de eventos:</strong> addEventListener, event objects</li>
+                        <li><strong>Creación de elementos:</strong> createElement, appendChild</li>
+                        <li><strong>Formularios dinámicos:</strong> Validación, envío, reset</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Evaluación Laboratorio 2 -->
+            <div class="research-section" style="margin-top: 2rem;">
+                <h3 class="section-title" style="font-size: 1.5rem;">Evaluación Laboratorio 2 - HTML DOM</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; margin: 1.5rem 0; border: 2px solid #e2e8f0;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="background: #f8fafc;">
+                            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; width: 40%;">Actividad</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 2px solid #e2e8f0; width: 30%;">Primera Entrega</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 2px solid #e2e8f0; width: 30%;">Segunda Entrega</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Subir ejercicios de HTML DOM</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #e2e8f0;">
+                                <button class="btn btn-download" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                    <i class="fas fa-upload"></i> Subir Primera Entrega
+                                </button>
+                            </td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #e2e8f0;">
+                                <button class="btn btn-download" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                    <i class="fas fa-upload"></i> Subir Segunda Entrega
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Laboratorio 3 - AJAX -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Laboratorio 3 - AJAX</h2>
+            
+            <div class="intro-text">
+                <p><strong>Ejercicios de AJAX y APIs</strong></p>
+                
+                <div class="key-points">
+                    <h3>Instrucciones del Laboratorio 3</h3>
+                    <ul>
+                        <li><strong>Metodología:</strong> Ver las instrucciones de cada ejercicio, pausar el video para realizarlo, y luego comparar con la solución propuesta por Jonathan MirCha</li>
+                        <li><strong>Repaso:</strong> Se pueden repasar los videos anteriores las veces que sea necesario</li>
+                        <li><strong>Cantidad:</strong> Elaborar entre 2 y 5 ejercicios de AJAX</li>
+                        <li><strong>Enfoque práctico:</strong> Estos ejercicios son esenciales para crear aplicaciones web modernas que se comuniquen con servidores</li>
+                    </ul>
+                    
+                    <h4>Temas de AJAX:</h4>
+                    <ul>
+                        <li><strong>Fetch API:</strong> Peticiones GET, POST, PUT, DELETE</li>
+                        <li><strong>Manejo de respuestas:</strong> JSON, texto, formularios</li>
+                        <li><strong>Async/await:</strong> Sintaxis moderna para código asíncrono</li>
+                        <li><strong>Manejo de errores:</strong> Try/catch con peticiones HTTP</li>
+                        <li><strong>APIs públicas:</strong> Consumo de servicios web externos</li>
+                        <li><strong>Actualización dinámica:</strong> Modificar DOM con datos de servidor</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía del Tema 3.5: JavaScript - Programación del Lado del Cliente</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre JavaScript, fundamentos del lenguaje, 
+                    manipulación del DOM, programación asíncrona, AJAX y mejores prácticas. 
+                    <strong>Nota: El material de lectura para este tema está en desarrollo y estará disponible próximamente.</strong>
+                </p>
+                <div class="pdf-actions">
+                    <button class="btn btn-download" disabled style="background: #94a3b8; cursor: not-allowed;">
+                        <i class="fas fa-clock"></i> Material en Desarrollo
+                    </button>
+                </div>
+
+                <div class="pdf-embed" style="background: #f8fafc; border-radius: 12px; padding: 3rem; text-align: center;">
+                    <i class="fas fa-tools" style="font-size: 4rem; color: #cbd5e1; margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #64748b; margin-bottom: 1rem;">Material en Desarrollo</h3>
+                    <p style="color: #94a3b8;">La guía completa del Tema 3.5 estará disponible próximamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 3/tema_3_4.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 3.4 Bootstrap
+            </a>
+            <a href="/src/pages/unidad 3/tema_3_6.html" class="nav-btn next">
+                Siguiente Tema: 3.6 Evaluación Final <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 3.5: JavaScript - Programación del Lado del Cliente</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

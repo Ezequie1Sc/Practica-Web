@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 2.6: Java y Programación Orientada a Objetos | Células Plenum</title>
+    <meta name="description" content="Tema 2.6 del Módulo 2: Java y Programación Orientada a Objetos - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado UNIFICADO -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar CORREGIDO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 2: Fundamentos de Programación</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 2/index.moduloDos.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 2/tema_2_7.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Java y Programación Orientada a Objetos" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_1.html" class="topic-name">2.1 Fundamentos de Bases de Datos</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_2.html" class="topic-name">2.2 Normalización de Bases de Datos</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_3.html" class="topic-name">2.3 Lenguaje de Consulta Estructurado (SQL)</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_4.html" class="topic-name">2.4 Triggers en Bases de Datos</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_5.html" class="topic-name">2.5 Paradigmas de Programación</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_6.html" class="topic-name">2.6 Java y Programación Orientada a Objetos</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_7.html" class="topic-name">2.7 Arquitectura de Software y APIs</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 2.6: Java y Programación Orientada a Objetos</h1>
+            <div class="intro-text">
+                <p>
+                    <strong>Java</strong> es uno de los lenguajes de programación más importantes y utilizados en el mundo, 
+                    reconocido por su portabilidad, robustez y amplia adopción en aplicaciones empresariales. 
+                    Su diseño está completamente basado en los principios de la <strong>Programación Orientada a Objetos (POO)</strong>.
+                </p>
+                <p>
+                    En este tema exploraremos Java como lenguaje, sus diferencias fundamentales con JavaScript, 
+                    y aprenderemos a implementar aplicaciones completas que integren Java con bases de datos 
+                    MySQL aplicando los conceptos de POO y arquitectura MVC.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/k0SMuHlmATs" 
+                    title="Difference between Java and JavaScript"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.6.1 Difference between Java and JavaScript</h3>
+                <p class="video-desc">
+                    Explicación clara de las diferencias fundamentales entre Java y JavaScript, 
+                    dos lenguajes que, a pesar de su nombre similar, tienen propósitos y características muy diferentes.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/Wpeym1_lmPo" 
+                    title="Java vs JavaScript"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.6.2 Java vs JavaScript</h3>
+                <p class="video-desc">
+                    Comparación detallada entre Java y JavaScript, analizando sintaxis, 
+                    casos de uso, entornos de ejecución y aplicaciones prácticas de cada lenguaje.
+                </p>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PL-Mlm_HYjCo9vojnWbPTs6nV51J8WV_O5" 
+                    title="Curso de programación en Java"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.6.3 Curso de programación en Java</h3>
+                <p class="video-desc">
+                    Curso completo de programación en Java que cubre desde los fundamentos básicos 
+                    hasta conceptos avanzados de POO y desarrollo de aplicaciones.
+                </p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PL-Mlm_HYjCo_uketceEXL4CuoPf9t38FZ" 
+                    title="Curso Java y MySQL"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.6.4 Curso Java y MySQL</h3>
+                <p class="video-desc">
+                    Serie especializada en la integración de Java con bases de datos MySQL, 
+                    cubriendo conexión JDBC, operaciones CRUD y mejores prácticas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos opcionales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Contenido Opcional</h2>
+            
+            <!-- Curso 1 -->
+            <div class="video-info">
+                <h3 class="video-title">Java básico - Curso Udemy</h3>
+                <p class="video-desc">
+                    Curso completo de Java básico desde cero, ideal para quienes comienzan 
+                    su journey en programación con Java.
+                </p>
+                <a href="https://www.udemy.com/course/java-basico-desde-cero-gratis/" target="_blank" class="btn btn-download" style="margin-top: 1rem;">
+                    <i class="fas fa-external-link-alt"></i> Ver Curso en Udemy
+                </a>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="video-info">
+                <h3 class="video-title">Fundamentos de Java - Curso Udemy</h3>
+                <p class="video-desc">
+                    Curso especializado en los fundamentos esenciales de Java, 
+                    perfecto para consolidar conocimientos básicos.
+                </p>
+                <a href="https://www.udemy.com/course/fundamentos-de-java-aprende-a-programar-java-desde-cero-sin-misterios/" target="_blank" class="btn btn-download" style="margin-top: 1rem;">
+                    <i class="fas fa-external-link-alt"></i> Ver Curso en Udemy
+                </a>
+            </div>
+
+            <!-- Tutorial 3 -->
+            <div class="video-info">
+                <h3 class="video-title">Tutorial de Java - W3Schools</h3>
+                <p class="video-desc">
+                    Tutorial completo y referencia oficial de Java en W3Schools, 
+                    con ejemplos interactivos y ejercicios prácticos.
+                </p>
+                <a href="https://www.w3schools.com/java/default.asp" target="_blank" class="btn btn-download" style="margin-top: 1rem;">
+                    <i class="fas fa-external-link-alt"></i> Ver Tutorial en W3Schools
+                </a>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java vs JavaScript</h3>
+                    <p><strong>Java</strong> es un lenguaje compilado, fuertemente tipado, orientado a objetos, que ejecuta en JVM. <strong>JavaScript</strong> es interpretado, débilmente tipado, multiparadigma, que ejecuta en navegadores. Java es para aplicaciones empresariales; JavaScript para web frontend y backend con Node.js.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>POO en Java</h3>
+                    <p>Java implementa completamente los principios de POO: <strong>Encapsulación</strong> (modificadores de acceso), <strong>Herencia</strong> (extends), <strong>Polimorfismo</strong> (sobrecarga/sobreescritura), y <strong>Abstracción</strong> (clases abstractas/interfaces). Todo en Java es un objeto excepto los tipos primitivos.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>JDBC - Conexión a Bases de Datos</h3>
+                    <p>Java Database Connectivity (JDBC) es la API estándar para conectar Java con bases de datos. Proporciona: <strong>DriverManager</strong>, <strong>Connection</strong>, <strong>Statement</strong>, <strong>PreparedStatement</strong>, y <strong>ResultSet</strong>. Permite ejecutar consultas SQL y procesar resultados.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Arquitectura MVC</h3>
+                    <p>Model-View-Controller separa la aplicación en tres componentes: <strong>Modelo</strong> (datos y lógica de negocio), <strong>Vista</strong> (interfaz de usuario), y <strong>Controlador</strong> (maneja interacciones). En Java se implementa con JSP/Servlets o frameworks como Spring MVC.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Operaciones CRUD</h3>
+                    <p>Las operaciones básicas de persistencia: <strong>Create</strong> (INSERT), <strong>Read</strong> (SELECT), <strong>Update</strong> (UPDATE), y <strong>Delete</strong> (DELETE). En Java se implementan mediante JDBC con sentencias SQL parametrizadas para prevenir inyecciones.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-window-restore"></i>
+                    </div>
+                    <h3>Interfaces Gráficas en Java</h3>
+                    <p>Java ofrece múltiples opciones para GUIs: <strong>Swing</strong> (componentes ligeros), <strong>JavaFX</strong> (moderno, rich client), y <strong>AWT</strong> (componentes nativos). Para aplicaciones de escritorio empresariales, Swing sigue siendo muy utilizado.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Características Principales de Java</h3>
+                <ul>
+                    <li><strong>Write Once, Run Anywhere:</strong> Código portable gracias a la JVM</li>
+                    <li><strong>Orientado a Objetos Puro:</strong> Todo es un objeto (excepto primitivos)</li>
+                    <li><strong>Robusto y Seguro:</strong> Manejo automático de memoria y verificación de tipos</li>
+                    <li><strong>Multihilo:</strong> Soporte nativo para programación concurrente</li>
+                    <li><strong>Distribuido:</strong> Diseñado para aplicaciones en red</li>
+                    <li><strong>Alto Rendimiento:</strong> Compilación JIT y optimizaciones de la JVM</li>
+                    <li><strong>Ecosistema Rico:</strong> Amplias librerías y frameworks</li>
+                    <li><strong>Backwards Compatibility:</strong> Código antiguo sigue funcionando</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Galería de Proyectos -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Galería de Proyectos</h2>
+            <p class="intro-text" style="text-align: center; margin-bottom: 2rem;">
+                Resultados reales de los estudiantes del programa
+            </p>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <img src="/assets/practica Java_SQL/base.png" alt="Base de datos" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3>Estructura de Base de Datos</h3>
+                    <p>Diseño completo del modelo de base de datos para el sistema de gestión estudiantil.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <img src="/assets/practica Java_SQL/loggin.png" alt="Login" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3>Pantalla de Login</h3>
+                    <p>Interfaz de autenticación de usuarios con validación de credenciales.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <img src="/assets/practica Java_SQL/javaLabo.png" alt="Login exitoso" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3>Login Exitoso</h3>
+                    <p>Confirmación de acceso al sistema después de validación correcta.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <img src="/assets/practica Java_SQL/Alumno.png" alt="Agregar alumno" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3>Agregar Alumno</h3>
+                    <p>Formulario para registro de nuevos estudiantes en el sistema.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <img src="/assets/practica Java_SQL/Alumno_add.png" alt="Formulario" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3>Formulario de Registro</h3>
+                    <p>Interfaz completa para captura de datos del estudiante.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <img src="/assets/practica Java_SQL/AlumnoCheck.png" alt="Confirmación" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3>Confirmación Exitosa</h3>
+                    <p>Mensaje de confirmación después de registrar un estudiante.</p>
+                </div>
+            </div>
+            
+            <div class="intro-text" style="text-align: center; margin-top: 2rem;">
+                <p><strong>Ejemplo del Tema 2.6:</strong> Proyecto de sistema de gestión estudiantil desarrollado con Java y POO</p>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 2.6: Java y Programación Orientada a Objetos</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre Java, programación orientada a objetos, 
+                    conexión a bases de datos MySQL, implementación de arquitectura MVC, y guía completa 
+                    para el desarrollo del proyecto de laboratorio con ejemplos prácticos y mejores prácticas.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 2/tema 2.6.pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 2/tema 2.6.pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 2/tema_2_5.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 2.5 Paradigmas
+            </a>
+            <a href="/src/pages/unidad 2/tema_2_7.html" class="nav-btn next">
+                Siguiente Tema: 2.7 Arquitectura <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 2.6: Java y Programación Orientada a Objetos</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

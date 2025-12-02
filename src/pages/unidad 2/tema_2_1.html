@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 2.1: Fundamentos de Bases de Datos | Células Plenum</title>
+    <meta name="description" content="Tema 2.1 del Módulo 2: Fundamentos de Bases de Datos - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado UNIFICADO -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar CORREGIDO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 2: Fundamentos de Programación</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 2/index.moduloDos.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-arrow">
+                        Siguiente Módulo <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Fundamentos de Bases de Datos" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_1.html" class="topic-name">2.1 Fundamentos de Bases de Datos</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_2.html" class="topic-name">2.2 Normalización de Bases de Datos</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_3.html" class="topic-name">2.3 Lenguaje de Consulta Estructurado (SQL)</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_4.html" class="topic-name">2.4 Triggers en Bases de Datos</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_5.html" class="topic-name">2.5 Paradigmas de Programación</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_6.html" class="topic-name">2.6 Java y Programación Orientada a Objetos</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_7.html" class="topic-name">2.7 Arquitectura de Software y APIs</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 2.1: Fundamentos de Bases de Datos</h1>
+            <div class="intro-text">
+                <p>
+                    Las <strong>bases de datos</strong> son el corazón de cualquier sistema de información moderno. 
+                    Permiten almacenar, organizar y recuperar grandes volúmenes de datos de manera eficiente, 
+                    garantizando la integridad, seguridad y consistencia de la información.
+                </p>
+                <p>
+                    En este tema exploraremos los conceptos fundamentales de las bases de datos relacionales, 
+                    incluyendo tipos de datos, estructura de tablas, relaciones entre entidades y los principios 
+                    básicos del lenguaje SQL para la manipulación y consulta de datos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PLGC1kwoNMbVZG2QaDnd6ME_lqNF4GF4S4" 
+                    title="Viaje al Fondo de los Datos - Playlist Completa"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.1.1 Viaje al Fondo de los Datos</h3>
+                <p class="video-desc">
+                    Lista de reproducción completa que cubre todos los fundamentos de bases de datos, 
+                    desde conceptos básicos hasta técnicas avanzadas de modelado y consultas.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PL3y8v30wQ1s9e6TS_fGGhhuVFOa3w-6G2" 
+                    title="Bases de datos relacionales - Playlist"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.1.2 Bases de datos relacionales</h3>
+                <p class="video-desc">
+                    Serie completa sobre bases de datos relacionales, explicando el modelo relacional, 
+                    normalización y diseño de esquemas eficientes.
+                </p>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PLi_UneHMpzONsjIf0xl-02eQIAH7T2_t8" 
+                    title="Relaciones entre tablas - Playlist"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.1.3 Relaciones entre tablas</h3>
+                <p class="video-desc">
+                    Aprende sobre los diferentes tipos de relaciones en bases de datos: uno a uno, 
+                    uno a muchos y muchos a muchos, con ejemplos prácticos.
+                </p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PLi_UneHMpzON3xmBc6_JfFRz7BMFk14Kl" 
+                    title="mooc SQLfácil, fácil - Playlist"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.1.4 mooc SQLfácil, fácil</h3>
+                <p class="video-desc">
+                    Introducción completa al lenguaje SQL, desde consultas básicas SELECT hasta 
+                    operaciones avanzadas de manipulación de datos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Modelo Relacional</h3>
+                    <p>Fundamento teórico de las bases de datos modernas basado en la teoría de conjuntos y lógica de predicados. Utiliza <strong>tablas</strong> (relaciones) compuestas por <strong>filas</strong> (tuplas) y <strong>columnas</strong> (atributos). Cada tabla debe tener una <strong>llave primaria</strong> única que identifique cada registro.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>Estructura de Tablas</h3>
+                    <p>Las tablas organizan los datos en filas y columnas. Cada columna tiene un <strong>tipo de dato</strong> específico (INT, VARCHAR, DATE, etc.) y <strong>restricciones</strong> (NOT NULL, UNIQUE, PRIMARY KEY). Las <strong>llaves foráneas</strong> establecen relaciones entre tablas manteniendo la integridad referencial.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Relaciones entre Tablas</h3>
+                    <p>Existen tres tipos principales de relaciones: <strong>Uno a Uno</strong> (1:1), <strong>Uno a Muchos</strong> (1:N) y <strong>Muchos a Muchos</strong> (N:M). Las relaciones se implementan mediante llaves foráneas y son esenciales para eliminar redundancia y mantener la consistencia de datos.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Lenguaje SQL</h3>
+                    <p>Structured Query Language es el estándar para gestionar bases de datos relacionales. Se divide en: <strong>DDL</strong> (Data Definition Language) para definir estructuras, <strong>DML</strong> (Data Manipulation Language) para manipular datos, y <strong>DCL</strong> (Data Control Language) para control de acceso.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Integridad de Datos</h3>
+                    <p>Conjunto de reglas que garantizan la precisión y consistencia de los datos. Incluye: <strong>Integridad de entidad</strong> (llaves primarias únicas), <strong>Integridad referencial</strong> (relaciones consistentes), <strong>Integridad de dominio</strong> (tipos de datos válidos) e <strong>Integridad de usuario</strong> (reglas de negocio).</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Transacciones ACID</h3>
+                    <p>Propiedades que garantizan procesamiento confiable de transacciones: <strong>Atomicidad</strong> (todo o nada), <strong>Consistencia</strong> (estado válido), <strong>Aislamiento</strong> (ejecución concurrente) y <strong>Durabilidad</strong> (cambios permanentes). Fundamentales para operaciones críticas.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Ventajas de las Bases de Datos Relacionales</h3>
+                <ul>
+                    <li><strong>Integridad de datos:</strong> Validación automática mediante restricciones y relaciones</li>
+                    <li><strong>Reducción de redundancia:</strong> Datos almacenados una sola vez</li>
+                    <li><strong>Consistencia:</strong> Mismos datos en toda la aplicación</li>
+                    <li><strong>Seguridad:</strong> Control granular de acceso a datos</li>
+                    <li><strong>Escalabilidad:</strong> Capacidad para manejar grandes volúmenes</li>
+                    <li><strong>Estandarización:</strong> Uso del lenguaje SQL universal</li>
+                    <li><strong>Backup y recuperación:</strong> Mecanismos robustos de respaldo</li>
+                    <li><strong>Concurrencia:</strong> Múltiples usuarios accediendo simultáneamente</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 2.1: Fundamentos de Bases de Datos</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre bases de datos relacionales, 
+                    modelos de datos, diseño de esquemas, tipos de relaciones y fundamentos de SQL 
+                    con ejemplos prácticos y ejercicios.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 2/Tema 2.1. Bases de Datos Relacionales.pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 2/Tema 2.1. Bases de Datos Relacionales.pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 2/index.moduloDos.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Volver al Módulo 2
+            </a>
+            <a href="/src/pages/unidad 2/tema_2_2.html" class="nav-btn next">
+                Siguiente Tema: 2.2 Normalización <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 2.1: Fundamentos de Bases de Datos</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+</body>
+</html>

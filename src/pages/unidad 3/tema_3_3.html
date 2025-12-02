@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 3.3: CSS - Hojas de Estilo en Cascada | Células Plenum</title>
+    <meta name="description" content="Tema 3.3 del Módulo 3: CSS - Hojas de Estilo en Cascada - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 3: Desarrollo Web y Tecnologías Emergentes</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 3/tema_3_4.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="CSS - Hojas de Estilo en Cascada" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_1.html" class="topic-name">3.1 Fundamentos de Desarrollo Web</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_2.html" class="topic-name">3.2 HTML - Lenguaje de Marcado</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_3.html" class="topic-name">3.3 CSS - Hojas de Estilo</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_4.html" class="topic-name">3.4 JavaScript</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_5.html" class="topic-name">3.5 Frameworks de Desarrollo</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 3/tema_3_6.html" class="topic-name">3.6 Evaluación Final</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 3.3: CSS - Hojas de Estilo en Cascada</h1>
+            <div class="intro-text">
+                <p>
+                    <strong>CSS (Cascading Style Sheets)</strong> es el lenguaje utilizado para describir la presentación 
+                    y el diseño de documentos HTML. Permite controlar colores, fuentes, espaciado, 
+                    disposición de elementos y crear diseños responsivos que se adapten a diferentes dispositivos.
+                </p>
+                <p>
+                    En este tema exploraremos los fundamentos de CSS, incluyendo selectores, propiedades, 
+                    el modelo de caja, técnicas de layout como Flexbox y Grid, y principios de diseño responsivo 
+                    para crear interfaces web modernas y atractivas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/7aAsXtFzNH8" 
+                    title="CSS: conceptos básicos"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.3.1 CSS: conceptos básicos</h3>
+                <p class="video-desc">
+                    Introducción completa a los conceptos fundamentales de CSS, 
+                    incluyendo sintaxis, selectores básicos, propiedades esenciales 
+                    y primeros pasos en el diseño web.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/K3xmRF8ab1o" 
+                    title="Fundamentos CSS"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">3.3.2 Fundamentos CSS</h3>
+                <p class="video-desc">
+                    Explicación detallada de los fundamentos de CSS, cubriendo 
+                    el modelo de caja, posicionamiento, herencia, cascada 
+                    y mejores prácticas para escribir CSS mantenible.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos opcionales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Contenido Opcional</h2>
+            
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/9HVBvwPp1MA" 
+                    title="CSS Avanzado 1"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">CSS Avanzado 1</h3>
+                <p class="video-desc">
+                    Técnicas avanzadas de CSS incluyendo variables CSS, 
+                    funciones, pseudo-clases y pseudo-elementos complejos, 
+                    y animaciones CSS básicas.
+                </p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/9zBsdzdE4sM" 
+                    title="CSS Avanzado 2"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">CSS Avanzado 2</h3>
+                <p class="video-desc">
+                    Continuación de técnicas avanzadas con enfoque en 
+                    layout moderno, transformaciones 2D y 3D, 
+                    y efectos visuales sofisticados.
+                </p>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/jx5jmI0UlXU" 
+                    title="CSS Avanzado 3"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">CSS Avanzado 3</h3>
+                <p class="video-desc">
+                    Tercera parte de CSS avanzado, enfocándose en 
+                    metodologías CSS, arquitectura escalable, 
+                    y optimización de rendimiento.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Sintaxis y Selectores CSS</h3>
+                    <p>CSS usa reglas compuestas por <strong>selectores</strong> y <strong>declaraciones</strong>. Selectores comunes: <strong>elemento</strong> (p), <strong>clase</strong> (.clase), <strong>ID</strong> (#id), <strong>atributo</strong> ([type="text"]). La <strong>especificidad</strong> determina qué reglas se aplican cuando hay conflictos.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Modelo de Caja (Box Model)</h3>
+                    <p>Cada elemento es una caja con: <strong>content</strong> (contenido), <strong>padding</strong> (relleno), <strong>border</strong> (borde), y <strong>margin</strong> (margen). La propiedad <strong>box-sizing</strong> controla cómo se calcula el tamaño total (content-box vs border-box).</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <h3>Layout y Posicionamiento</h3>
+                    <p>Métodos de disposición: <strong>Normal Flow</strong> (flujo normal), <strong>Flexbox</strong> (diseño unidimensional), <strong>Grid</strong> (diseño bidimensional), <strong>Float</strong> (flotación), y <strong>Position</strong> (static, relative, absolute, fixed, sticky).</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Diseño Responsivo</h3>
+                    <p>Técnicas para adaptar diseño a diferentes dispositivos: <strong>Media Queries</strong> (@media), <strong>unidades flexibles</strong> (%, em, rem, vw, vh), <strong>imágenes responsivas</strong> (max-width: 100%), y <strong>mobile-first</strong> (diseño móvil primero).</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Color y Tipografía</h3>
+                    <p>Propiedades visuales: <strong>color</strong> (texto), <strong>background-color</strong> (fondo), <strong>font-family</strong> (tipografía), <strong>font-size</strong> (tamaño), <strong>line-height</strong> (interlineado). Sistemas de color: hexadecimal, RGB, HSL.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Transiciones y Animaciones</h3>
+                    <p>Efectos dinámicos: <strong>transition</strong> (transiciones suaves), <strong>animation</strong> (animaciones complejas), <strong>transform</strong> (transformaciones 2D/3D), y <strong>keyframes</strong> (definición de animaciones). Mejoran la experiencia de usuario.</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Principios Fundamentales de CSS</h3>
+                <ul>
+                    <li><strong>Cascada:</strong> Las reglas se aplican en orden de especificidad y origen</li>
+                    <li><strong>Herencia:</strong> Algunas propiedades se heredan de elementos padres a hijos</li>
+                    <li><strong>Especificidad:</strong> Determina qué regla gana cuando hay conflictos</li>
+                    <li><strong>Modelo de Caja:</strong> Todo elemento es una caja con contenido, padding, border y margin</li>
+                    <li><strong>Display:</strong> Controla cómo se comporta un elemento en el layout</li>
+                    <li><strong>Posicionamiento:</strong> Define cómo se posiciona un elemento en la página</li>
+                    <li><strong>Responsive Design:</strong> Diseño que se adapta a diferentes tamaños de pantalla</li>
+                    <li><strong>Accesibilidad:</strong> Consideraciones de contraste, tamaño de texto y navegación</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía del Tema 3.3: CSS - Hojas de Estilo en Cascada</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre CSS, selectores, propiedades, 
+                    modelo de caja, técnicas de layout, diseño responsivo y mejores prácticas. 
+                    <strong>Nota: El material de lectura para este tema está en desarrollo y estará disponible próximamente.</strong>
+                </p>
+                <div class="pdf-actions">
+                    <button class="btn btn-download" disabled style="background: #94a3b8; cursor: not-allowed;">
+                        <i class="fas fa-clock"></i> Material en Desarrollo
+                    </button>
+                </div>
+
+                <div class="pdf-embed" style="background: #f8fafc; border-radius: 12px; padding: 3rem; text-align: center;">
+                    <i class="fas fa-tools" style="font-size: 4rem; color: #cbd5e1; margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #64748b; margin-bottom: 1rem;">Material en Desarrollo</h3>
+                    <p style="color: #94a3b8;">La guía completa del Tema 3.3 estará disponible próximamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 3/tema_3_2.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 3.2 HTML
+            </a>
+            <a href="/src/pages/unidad 3/tema_3_4.html" class="nav-btn next">
+                Siguiente Tema: 3.4 JavaScript <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 3.3: CSS - Hojas de Estilo en Cascada</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

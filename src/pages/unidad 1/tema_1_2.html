@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 1.2: Requerimientos | Células Plenum</title>
+    <meta name="description" content="Tema 1.2 del Módulo 1: Requerimientos en ingeniería de software - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado UNIFICADO -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar CORREGIDO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 1: Fundamentos de Ingeniería de Software</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 1/index_moduloUno.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 1/tema_1_3.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Requerimientos de Software" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_1.html" class="topic-name">1.1 Visión General de Ingeniería de Software</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_2.html" class="topic-name">1.2 Requerimientos</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_3.html" class="topic-name">1.3 Arquitectura</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 1/tema_1_4.html" class="topic-name">1.4 Patrones de Diseño</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 1.2: Ingeniería de Requerimientos</h1>
+            <div class="intro-text">
+                <p>
+                    La <strong>ingeniería de requerimientos</strong> es una fase crítica en el desarrollo de software que 
+                    se enfoca en identificar, analizar, documentar y validar las necesidades y restricciones que debe 
+                    satisfacer un sistema. Un correcto manejo de los requerimientos es fundamental para el éxito del proyecto.
+                </p>
+                <p>
+                    En este tema exploraremos los tipos de requerimientos, las técnicas para su recolección, 
+                    los métodos de especificación y las mejores prácticas para su gestión a lo largo del ciclo de vida del software.
+                </p>
+            </div>
+        </section>
+
+        <!-- Video principal -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Video Principal</h2>
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/fLcWpOY3h7k" 
+                    title="Principios de la Ingeniería de Requerimientos"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Principios de la Ingeniería de Requerimientos</h3>
+                <p class="video-desc">
+                    Este video presenta los fundamentos y principios esenciales de la ingeniería de requerimientos, 
+                    explicando su importancia en el desarrollo de software y las consecuencias de una gestión inadecuada.
+                </p>
+            </div>
+        </section>
+
+        <!-- Playlist adicional -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Playlist Complementaria</h2>
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/videoseries?list=PLCVGhLzsMEq8-Q7Mrvq5Q6jrHo4nDJpod" 
+                    title="Ingeniería de Requerimientos de Software - Playlist Completa"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Ingeniería de Requerimientos de Software</h3>
+                <p class="video-desc">
+                    Playlist completa que profundiza en todos los aspectos de la ingeniería de requerimientos, 
+                    desde la elicitación hasta la validación y gestión de cambios.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <h3>Tipos de Requerimientos</h3>
+                    <p>Los requerimientos se clasifican en <strong>funcionales</strong> (qué debe hacer el sistema) y <strong>no funcionales</strong> (cómo debe hacerlo). Los no funcionales incluyen rendimiento, seguridad, usabilidad, disponibilidad y mantenibilidad, entre otros.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Técnicas de Elicitación</h3>
+                    <p>Las técnicas más comunes incluyen entrevistas, cuestionarios, observación, prototipado, análisis de documentos, talleres de requerimientos (JAD) y lluvia de ideas. La selección depende del contexto y los stakeholders involucrados.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Especificación y Documentación</h3>
+                    <p>Los requerimientos deben documentarse de manera clara, precisa y verificable. Se utilizan formatos como historias de usuario, casos de uso, especificaciones formales y documentos de requerimientos de software (SRS).</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Proceso de Ingeniería de Requerimientos</h3>
+                <ul>
+                    <li><strong>Elicitación:</strong> Identificación y recolección de necesidades de stakeholders</li>
+                    <li><strong>Análisis:</strong> Evaluación de viabilidad, consistencia y completitud</li>
+                    <li><strong>Especificación:</strong> Documentación formal y estructurada</li>
+                    <li><strong>Validación:</strong> Verificación de que los requerimientos reflejan las necesidades reales</li>
+                    <li><strong>Gestión:</strong> Control de cambios y trazabilidad a lo largo del proyecto</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 1.2</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada, técnicas de elicitación, ejemplos de especificación y plantillas para documentación de requerimientos.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 1/presentación Tema 1.2.pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 1/presentación Tema 1.2.pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 1/tema_1_1.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 1.1 Visión General
+            </a>
+            <a href="/src/pages/unidad 1/tema_1_3.html" class="nav-btn next">
+                Siguiente Tema: 1.3 Arquitectura <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 1.2: Requerimientos</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+</body>
+</html>

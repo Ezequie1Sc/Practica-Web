@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 2 - Fundamentos de Programación | Células Plenum</title>
+    <meta name="description" content="Módulo 2: Fundamentos de Programación - Repaso de conceptos básicos de programación para el Programa Células Plenum." />
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+          integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css">
+     <link rel="stylesheet" href="/src/css/modulo1_Css/styles_modulo_1.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+<header class="header">
+    <div class="header-content">
+        <a href="/index.html" class="logo">
+            <img src="/assets/logos/logo.png" alt="Plenumsoft Academy">
+        </a>
+
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+        <label for="nav-checkbox" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="/index.html" class="nav-link">
+                    <i class="fas fa-home nav-icon"></i> Inicio
+                </a></li>
+                <li><a href="/src/pages/unidad 1/index_moduloUno.html" class="nav-link">
+                    <i class="fas fa-book-open nav-icon"></i> Módulo 1
+                </a></li>
+                <li><a href="/src/pages/unidad 2/index.moduloDos.html" class="nav-link active">
+                    <i class="fas fa-code nav-icon"></i> Módulo 2
+                </a></li>
+                <li><a href="/src/pages/unidad 3/index_moduloTres.html" class="nav-link">
+                    <i class="fas fa-cogs nav-icon"></i> Módulo 3
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="intro fade-in">
+            <div class="card intro-card">
+                <div class="intro-content">
+                    <div>
+                        <h1>¡Bienvenido al Módulo 2!</h1>
+                        <p>
+                            El objetivo de este módulo es que los estudiantes repasen <strong>conceptos básicos de programación</strong>
+                            que han aprendido durante su formación académica y que son indispensables para los siguientes módulos
+                            del Programa Células Plenum.
+                        </p>
+                        <div class="info">
+                            <span><i class="fas fa-clock"></i> Duración: 12 días</span>
+                            <span><i class="fas fa-list-ul"></i> 7 temas</span>
+                        </div>
+                    </div>
+                    <a href="tema_2_1.html" class="start-btn" aria-label="Comenzar Módulo 2">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Comenzar Módulo</span>
+                    </a>
+                </div>
+                <div class="video-container">
+                    <iframe 
+                        class="video-embed"
+                        src="https://www.youtube.com/embed/8mAITcNt710" 
+                        title="Fundamentos de Programación - Módulo 2 Células Plenum"
+                        allowfullscreen
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics fade-in">
+            <h2 class="section-title">Temas del Módulo</h2>
+            <div class="topics-grid">
+                <article class="topic-card">
+                    <div class="icon" aria-hidden="true"><i class="fas fa-database"></i></div>
+                    <h3>2.1 Fundamentos de Bases de Datos</h3>
+                    <p>Conoce los conceptos esenciales de las bases de datos, su estructura y funcionamiento básico.</p>
+                    <a href="/src/pages/unidad 2/tema_2_1.html" class="start-topic-btn" aria-label="Comenzar tema 2.1">
+                        <i class="fas fa-play"></i> Comenzar Tema
+                    </a>
+                </article>
+                
+                <article class="topic-card">
+                    <div class="icon" aria-hidden="true"><i class="fas fa-table"></i></div>
+                    <h3>2.2 Normalización de Bases de Datos</h3>
+                    <p>Aprende a organizar los datos de manera eficiente para evitar redundancias y anomalías.</p>
+                    <a href="/src/pages/unidad 2/tema_2_2.html" class="start-topic-btn" aria-label="Comenzar tema 2.2">
+                        <i class="fas fa-play"></i> Comenzar Tema
+                    </a>
+                </article>
+                
+                <article class="topic-card">
+                    <div class="icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+                    <h3>2.3 Lenguaje de Consulta Estructurado (SQL)</h3>
+                    <p>Domina el lenguaje estándar para gestionar y consultar bases de datos relacionales.</p>
+                    <a href="/src/pages/unidad 2/tema_2_3.html" class="start-topic-btn" aria-label="Comenzar tema 2.3">
+                        <i class="fas fa-play"></i> Comenzar Tema
+                    </a>
+                </article>
+                
+                <article class="topic-card">
+                    <div class="icon" aria-hidden="true"><i class="fas fa-bolt"></i></div>
+                    <h3>2.4 Triggers en Bases de Datos</h3>
+                    <p>Descubre cómo automatizar acciones en respuesta a eventos específicos en la base de datos.</p>
+                    <a href="/src/pages/unidad 2/tema_2_4.html" class="start-topic-btn" aria-label="Comenzar tema 2.4">
+                        <i class="fas fa-play"></i> Comenzar Tema
+                    </a>
+                </article>
+                
+                <article class="topic-card">
+                    <div class="icon" aria-hidden="true"><i class="fas fa-cogs"></i></div>
+                    <h3>2.5 Paradigmas de Programación</h3>
+                    <p>Explora los diferentes enfoques para resolver problemas mediante la programación.</p>
+                    <a href="/src/pages/unidad 2/tema_2_5.html" class="start-topic-btn" aria-label="Comenzar tema 2.5">
+                        <i class="fas fa-play"></i> Comenzar Tema
+                    </a>
+                </article>
+                
+                <article class="topic-card">
+                    <div class="icon" aria-hidden="true"><i class="fab fa-java"></i></div>
+                    <h3>2.6 Java y Programación Orientada a Objetos</h3>
+                    <p>Aprende los fundamentos de Java y los principios de la programación orientada a objetos.</p>
+                    <a href="/src/pages/unidad 2/tema_2_6.html" class="start-topic-btn" aria-label="Comenzar tema 2.6">
+                        <i class="fas fa-play"></i> Comenzar Tema
+                    </a>
+                </article>
+                
+                <article class="topic-card">
+                    <div class="icon" aria-hidden="true"><i class="fas fa-sitemap"></i></div>
+                    <h3>2.7 Arquitectura de Software y APIs</h3>
+                    <p>Comprende cómo diseñar sistemas escalables y el funcionamiento de las interfaces de programación.</p>
+                    <a href="/src/pages/unidad 2/tema_2_7.html" class="start-topic-btn" aria-label="Comenzar tema 2.7">
+                        <i class="fas fa-play"></i> Comenzar Tema
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Pie de página">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Logo Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="Logo TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="Logo ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Módulo 2: Fundamentos de Programación</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top" aria-label="Volver al inicio">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

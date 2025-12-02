@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 2.2: Normalización de Bases de Datos | Células Plenum</title>
+    <meta name="description" content="Tema 2.2 del Módulo 2: Normalización de Bases de Datos - Células Plenum." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CSS personalizado UNIFICADO -->
+    <link rel="stylesheet" href="/src/css/modulo1_Css/modulo1.css" />
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Bootstrap Navbar CORREGIDO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logos/logo.png" alt="Plenumsoft Academy" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">
+                            <i class="fas fa-home me-2"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 1/index_moduloUno.html">
+                            <i class="fas fa-book-open me-2"></i> Módulo 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/src/pages/unidad 2/index.moduloDos.html">
+                            <i class="fas fa-code me-2"></i> Módulo 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/unidad 3/index_moduloTres.html">
+                            <i class="fas fa-cogs me-2"></i> Módulo 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Menú lateral de temas del módulo -->
+        <section class="module-menu fade-in">
+            <div class="module-header">
+                <h2 class="module-title">Módulo 2: Fundamentos de Programación</h2>
+                <div class="module-nav">
+                    <a href="/src/pages/unidad 2/index.moduloDos.html" class="nav-arrow">
+                        <i class="fas fa-chevron-left"></i> Volver al Módulo
+                    </a>
+                    <a href="/src/pages/unidad 2/tema_2_3.html" class="nav-arrow">
+                        Siguiente Tema <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="module-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Normalización de Bases de Datos" />
+                </div>
+                
+                <div class="topics-container">
+                    <ul class="topics-list">
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_1.html" class="topic-name">2.1 Fundamentos de Bases de Datos</a>
+                            <span class="topic-status">Anterior</span>
+                        </li>
+                        <li class="topic-item active">
+                            <div class="topic-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_2.html" class="topic-name">2.2 Normalización de Bases de Datos</a>
+                            <span class="topic-status">Actual</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_3.html" class="topic-name">2.3 Lenguaje de Consulta Estructurado (SQL)</a>
+                            <span class="topic-status">Siguiente</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_4.html" class="topic-name">2.4 Triggers en Bases de Datos</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_5.html" class="topic-name">2.5 Paradigmas de Programación</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_6.html" class="topic-name">2.6 Java y Programación Orientada a Objetos</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                        <li class="topic-item">
+                            <div class="topic-icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <a href="/src/pages/unidad 2/tema_2_7.html" class="topic-name">2.7 Arquitectura de Software y APIs</a>
+                            <span class="topic-status">Próximo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Título del tema -->
+        <section class="intro fade-in">
+            <h1 class="section-title">Tema 2.2: Normalización de Bases de Datos</h1>
+            <div class="intro-text">
+                <p>
+                    La <strong>normalización</strong> es un proceso fundamental en el diseño de bases de datos relacionales 
+                    que busca eliminar redundancias y anomalías mediante la organización de datos en tablas 
+                    siguiendo reglas específicas llamadas <strong>formas normales</strong>.
+                </p>
+                <p>
+                    En este tema exploraremos las tres primeras formas normales (1FN, 2FN, 3FN), 
+                    aprenderemos a identificar y corregir problemas de diseño, y comprenderemos cuándo 
+                    la desnormalización puede ser beneficiosa para el rendimiento del sistema.
+                </p>
+            </div>
+        </section>
+
+        <!-- Videos principales -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">Videos de Aprendizaje</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/JRCjSUbYKxI" 
+                    title="Normalización de Bases de Datos - Introducción"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.2.1 Normalización - Introducción</h3>
+                <p class="video-desc">
+                    Video introductorio que explica el concepto de normalización, sus objetivos 
+                    principales y los problemas que resuelve en el diseño de bases de datos.
+                </p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/JZmSYf5J0C8" 
+                    title="Primera Forma Normal (1FN)"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.2.2 Primera Forma Normal (1FN)</h3>
+                <p class="video-desc">
+                    Explicación detallada de la primera forma normal, incluyendo los requisitos 
+                    para cumplirla y ejemplos prácticos de su aplicación.
+                </p>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/FlG-0LMXgzE" 
+                    title="Segunda Forma Normal (2FN)"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.2.3 Segunda Forma Normal (2FN)</h3>
+                <p class="video-desc">
+                    Estudio de la segunda forma normal, enfocándose en la eliminación de dependencias 
+                    parciales y la importancia de las llaves primarias compuestas.
+                </p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/g76kIh_jdLQ" 
+                    title="Tercera Forma Normal (3FN)"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.2.4 Tercera Forma Normal (3FN)</h3>
+                <p class="video-desc">
+                    Análisis de la tercera forma normal y su objetivo de eliminar dependencias 
+                    transitivas entre los atributos de una tabla.
+                </p>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-container">
+                <iframe 
+                    class="video-embed"
+                    src="https://www.youtube.com/embed/2A2183jBLrg" 
+                    title="Desnormalización de Bases de Datos"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">2.2.5 Desnormalización de Bases de Datos</h3>
+                <p class="video-desc">
+                    Explicación sobre cuándo y por qué puede ser beneficioso desnormalizar 
+                    una base de datos, balanceando normalización con rendimiento.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investigación detallada -->
+        <section class="research-section fade-in">
+            <h2 class="section-title">Investigación Detallada</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-1"></i>
+                    </div>
+                    <h3>Primera Forma Normal (1FN)</h3>
+                    <p>Una tabla está en 1FN cuando: <strong>No contiene grupos repetitivos</strong>, <strong>Cada atributo contiene valores atómicos</strong> (indivisibles), y <strong>Cada registro es único</strong>. Se eliminan columnas con múltiples valores separados por comas o arrays, creando tablas separadas cuando sea necesario.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-2"></i>
+                    </div>
+                    <h3>Segunda Forma Normal (2FN)</h3>
+                    <p>Requiere que la tabla esté en 1FN y que <strong>todos los atributos no clave dependan de toda la llave primaria</strong>. Si la llave es compuesta, se eliminan dependencias parciales moviendo los atributos que dependen solo de parte de la llave a nuevas tablas.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-3"></i>
+                    </div>
+                    <h3>Tercera Forma Normal (3FN)</h3>
+                    <p>Exige que la tabla esté en 2FN y que <strong>ningún atributo no clave dependa transitivamente de la llave primaria</strong>. Se eliminan dependencias transitivas moviendo los atributos que dependen de otros atributos no clave a tablas separadas.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Forma Normal de Boyce-Codd (FNBC)</h3>
+                    <p>Versión más fuerte de la 3FN donde <strong>todos los determinantes son claves candidatas</strong>. Elimina todas las dependencias funcionales donde el determinante no es una superclave. Es particularmente útil en diseños complejos con múltiples claves candidatas.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Desnormalización Controlada</h3>
+                    <p>Proceso intencional de <strong>reintroducir redundancia controlada</strong> para mejorar el rendimiento en consultas frecuentes. Se aplica después de la normalización completa cuando el rendimiento es crítico y las operaciones de lectura superan a las de escritura.</p>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Anomalías de Base de Datos</h3>
+                    <p>Problemas que la normalización busca eliminar: <strong>Anomalías de inserción</strong> (datos inconsistentes), <strong>Anomalías de actualización</strong> (modificaciones incompletas), y <strong>Anomalías de eliminación</strong> (pérdida accidental de información).</p>
+                </div>
+            </div>
+            
+            <div class="key-points">
+                <h3>Beneficios de la Normalización</h3>
+                <ul>
+                    <li><strong>Eliminación de redundancia:</strong> Los datos se almacenan una sola vez</li>
+                    <li><strong>Integridad mejorada:</strong> Menos posibilidades de datos inconsistentes</li>
+                    <li><strong>Mantenimiento simplificado:</strong> Cambios en un solo lugar</li>
+                    <li><strong>Flexibilidad en consultas:</strong> Estructura más predecible</li>
+                    <li><strong>Prevención de anomalías:</strong> Inserción, actualización y eliminación seguras</li>
+                    <li><strong>Mejor diseño:</strong> Forza a pensar en relaciones y dependencias</li>
+                    <li><strong>Escalabilidad:</strong> Estructura preparada para crecimiento</li>
+                    <li><strong>Documentación implícita:</strong> El diseño refleja las reglas de negocio</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PDF descargable e incrustado -->
+        <section class="pdf-section fade-in">
+            <h2 class="section-title">Material de Lectura</h2>
+            <div class="pdf-card">
+                <div class="pdf-header">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-title">Guía Completa del Tema 2.2: Normalización de Bases de Datos</div>
+                </div>
+                <p class="pdf-desc">
+                    Documento oficial con teoría detallada sobre normalización, ejemplos paso a paso 
+                    de cada forma normal, ejercicios prácticos y casos de estudio para aplicar 
+                    los conceptos aprendidos.
+                </p>
+                <div class="pdf-actions">
+                    <a href="/assets/pdfs/Recursos Unidad 2/Tema 2.2 corregido.pdf" target="_blank" class="btn btn-download">
+                        <i class="fas fa-download"></i> Descargar PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe src="/assets/pdfs/Recursos Unidad 2/Tema 2.2 corregido.pdf" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación entre temas -->
+        <div class="topic-navigation">
+            <a href="/src/pages/unidad 2/tema_2_1.html" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Tema Anterior: 2.1 Fundamentos
+            </a>
+            <a href="/src/pages/unidad 2/tema_2_3.html" class="nav-btn next">
+                Siguiente Tema: 2.3 SQL <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <img src="/assets/logos/celulas_plenum.png" alt="Células Plenum">
+                <img src="/assets/logos/tecnm.png" alt="TecNM">
+                <img src="/assets/logos/itescam.jpg" alt="ITESCAM">
+            </div>
+            <p><strong>Programa Células Plenum</strong> — Tema 2.2: Normalización de Bases de Datos</p>
+            <p>Desarrollado por <strong>Plenumsoft</strong> en colaboración con <strong>ITESCAM</strong></p>
+            <p>Contacto: <a href="mailto:ezequiel@plenumsoft.com">ezequiel@plenumsoft.com</a></p>
+            <a href="#top" class="back-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
